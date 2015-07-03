@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: |cFFFF8080AB|rReport
+## Author: Helvete (helvetetv@gmail.com)
+## Notes: Bindable button to quickly report incoming enemies in AB
+## SavedVariables: 
+ABReport.lua
+ABReport.xml

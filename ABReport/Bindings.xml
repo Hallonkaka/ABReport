@@ -1,0 +1,5 @@
+<Bindings>
+    <Binding name="ABREPORT" description="Default description" header="ABREPORT_HEADER">
+	ABReport_DoClick();
+	</Binding>
+</Bindings>
