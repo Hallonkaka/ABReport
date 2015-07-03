@@ -7,7 +7,8 @@ local ABReport_ReportTime = 1.5; -- delay in seconds before message is posted
 SLASH_AR1= "/AR";
 
 BINDING_HEADER_ABREPORT_HEADER = "ABReport";
-BINDING_NAME_ABREPORT = "Report";
+BINDING_NAME_ABREPORT = "Report Incoming";
+BINDING_NAME_ABSAFE = "Report Safe";
 
 local ABReport_LastClickTime = 0;
 local ABReport_Enemies = 0;
@@ -23,10 +24,14 @@ function ABReport_DoClick()
 	ABReport_DoReport = true;
 end
 
+function ABReport_DoSafe()
+	SendChatMessage("[ABr] "..GetSubZoneText().." is currently safe!", "BATTLEGROUND");
+end
+
 function ABReport_OnUpdate()
 	if ABReport_DoReport and ABReport_LastClickTime + ABReport_ReportTime <= time()
 	then
-		SendChatMessage("[ABr] Incoming  "..ABReport_Enemies.." to "..GetSubZoneText()..", need assistance!", "BATTLEGROUND");
+		SendChatMessage("[ABr] Incoming  "..ABReport_Enemies.." to "..GetSubZoneText().."!", "BATTLEGROUND");
 		ABReport_Enemies = 0;
 		ABReport_DoReport = false;
 	end

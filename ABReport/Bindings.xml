@@ -2,4 +2,7 @@
     <Binding name="ABREPORT" description="Default description" header="ABREPORT_HEADER">
 	ABReport_DoClick();
 	</Binding>
+	<Binding name="ABSAFE" description="Default description">
+	ABReport_DoSafe();
+	</Binding>
 </Bindings>
