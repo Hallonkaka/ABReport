@@ -15,8 +15,8 @@ Report Safe is a instant message with currentl location.
 
 Example messages:
 
-* [ABr] Incoming 3 to Stables!
-* [ABr] Incoming 16 to Blacksmith!
+* [ABr] Reporting 3 enemies at Stables!
+* [ABr] Reporting 16 enemies at Blacksmith!
 * [ABr] Blacksmith is safe!
 
 
