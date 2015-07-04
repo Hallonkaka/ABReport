@@ -31,7 +31,7 @@ end
 function ABReport_OnUpdate()
 	if ABReport_DoReport and ABReport_LastClickTime + ABReport_ReportTime <= time()
 	then
-		SendChatMessage("[ABr] Incoming  "..ABReport_Enemies.." to "..GetSubZoneText().."!", "BATTLEGROUND");
+		SendChatMessage("[ABr] Reporting  "..ABReport_Enemies.." enemies at "..GetSubZoneText().."!", "BATTLEGROUND");
 		ABReport_Enemies = 0;
 		ABReport_DoReport = false;
 	end
